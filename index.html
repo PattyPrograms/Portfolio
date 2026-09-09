@@ -373,27 +373,40 @@
                     <article class="project-card">
 
                         <div class="project-image project-visual neural-visual" aria-hidden="true">
-                            <div class="neural-network">
-                                <div class="network-layer input-layer">
-                                    <span></span><span></span><span></span>
+                            <div class="nn-board">
+                                <div class="nn-toolbar">
+                                    <span>Python</span><span>NumPy</span><span>Backprop</span>
                                 </div>
-                                <div class="network-connections connection-left">
-                                    <i></i><i></i><i></i><i></i><i></i><i></i>
+                                <div class="nn-main">
+                                    <div class="matrix-panel">
+                                        <div class="matrix-title">W₁ · x + b₁</div>
+                                        <div class="matrix-grid">
+                                            <span>0.29</span><span>-0.11</span><span>0.54</span>
+                                            <span>-0.36</span><span>0.18</span><span>0.43</span>
+                                            <span>0.47</span><span>0.09</span><span>-0.22</span>
+                                        </div>
+                                    </div>
+                                    <div class="nn-flow">
+                                        <div class="flow-node">3</div>
+                                        <div class="flow-link"></div>
+                                        <div class="flow-node mid">4</div>
+                                        <div class="flow-link"></div>
+                                        <div class="flow-node out">1</div>
+                                        <small>Iris model</small>
+                                    </div>
+                                    <div class="loss-panel">
+                                        <div class="loss-label">Loss</div>
+                                        <div class="loss-spark">
+                                            <i></i><i></i><i></i><i></i><i></i>
+                                        </div>
+                                        <div class="equation-chip">∂E/∂W</div>
+                                    </div>
                                 </div>
-                                <div class="network-layer hidden-layer">
-                                    <span></span><span></span><span></span><span></span>
+                                <div class="nn-footer">
+                                    <span>Linear Algebra</span>
+                                    <span>Chain Rule</span>
+                                    <span>3 → 4 → 1</span>
                                 </div>
-                                <div class="network-connections connection-right">
-                                    <i></i><i></i><i></i><i></i>
-                                </div>
-                                <div class="network-layer output-layer">
-                                    <span></span>
-                                </div>
-                            </div>
-                            <div class="neural-caption">
-                                <span>3 Inputs</span>
-                                <span>4 Hidden</span>
-                                <span>1 Output</span>
                             </div>
                         </div>
 
@@ -436,25 +449,35 @@
                     <article class="project-card">
 
                         <div class="project-image project-visual macrobyte-visual" aria-hidden="true">
-                            <div class="app-window">
-                                <div class="app-window-bar">
-                                    <span></span><span></span><span></span>
-                                    <strong>MacroByte</strong>
-                                </div>
-                                <div class="app-body">
-                                    <div class="app-sidebar">
-                                        <span></span><span></span><span></span><span></span>
+                            <div class="macrobyte-layout">
+                                <div class="macro-phone">
+                                    <div class="phone-notch"></div>
+                                    <div class="phone-screen">
+                                        <div class="macro-screen-header">
+                                            <strong>1,840</strong>
+                                            <small>Calories Left</small>
+                                        </div>
+                                        <div class="macro-rings">
+                                            <div class="macro-ring protein"><b>P</b><span>92g</span></div>
+                                            <div class="macro-ring carbs"><b>C</b><span>210g</span></div>
+                                            <div class="macro-ring fats"><b>F</b><span>58g</span></div>
+                                        </div>
+                                        <div class="meal-list">
+                                            <span>Breakfast</span>
+                                            <span>Lunch</span>
+                                            <span>Dinner</span>
+                                        </div>
                                     </div>
-                                    <div class="app-dashboard">
-                                        <div class="calorie-ring">
-                                            <strong>72%</strong>
-                                            <small>Daily Goal</small>
-                                        </div>
-                                        <div class="progress-list">
-                                            <span style="--progress: 76%"></span>
-                                            <span style="--progress: 58%"></span>
-                                            <span style="--progress: 86%"></span>
-                                        </div>
+                                </div>
+                                <div class="macro-sidecard">
+                                    <div class="sidecard-header">MacroByte</div>
+                                    <div class="weight-trend">
+                                        <i></i><i></i><i></i><i></i><i></i>
+                                    </div>
+                                    <div class="goal-checks">
+                                        <span>Goal Tracking</span>
+                                        <span>Daily Entries</span>
+                                        <span>Progress View</span>
                                     </div>
                                 </div>
                             </div>

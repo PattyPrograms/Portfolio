@@ -961,3 +961,666 @@ footer {
     }
 
 }
+/* Neural network project visual */
+.neural-visual {
+    flex-direction: column;
+    gap: 18px;
+    background: linear-gradient(135deg, #eef1f8 0%, #e4e9f4 100%);
+}
+
+.neural-network {
+    width: min(310px, 100%);
+    min-height: 126px;
+    display: grid;
+    grid-template-columns: 52px 1fr 64px 1fr 52px;
+    align-items: center;
+    gap: 8px;
+    padding: 18px;
+    border: 1px solid rgba(82, 100, 127, 0.16);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 16px 30px rgba(23, 32, 51, 0.08);
+}
+
+.network-layer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 2;
+}
+
+.network-layer span {
+    width: 18px;
+    height: 18px;
+    border: 3px solid #526f97;
+    border-radius: 50%;
+    background: #f9fbfd;
+    box-shadow: 0 3px 8px rgba(23, 32, 51, 0.10);
+}
+
+.hidden-layer span {
+    border-color: #6e7fa8;
+}
+
+.output-layer span {
+    width: 22px;
+    height: 22px;
+    border-color: #3d6fa8;
+    background: #edf4fb;
+}
+
+.network-connections {
+    height: 102px;
+    position: relative;
+    opacity: 0.78;
+}
+
+.network-connections i {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #9aa9be;
+    transform-origin: center;
+}
+
+.connection-left i:nth-child(1) { top: 18%; transform: rotate(22deg); }
+.connection-left i:nth-child(2) { top: 33%; transform: rotate(-18deg); }
+.connection-left i:nth-child(3) { top: 47%; transform: rotate(10deg); }
+.connection-left i:nth-child(4) { top: 62%; transform: rotate(-12deg); }
+.connection-left i:nth-child(5) { top: 76%; transform: rotate(18deg); }
+.connection-left i:nth-child(6) { top: 50%; transform: rotate(-32deg); }
+.connection-right i:nth-child(1) { top: 25%; transform: rotate(28deg); }
+.connection-right i:nth-child(2) { top: 42%; transform: rotate(10deg); }
+.connection-right i:nth-child(3) { top: 60%; transform: rotate(-12deg); }
+.connection-right i:nth-child(4) { top: 76%; transform: rotate(-28deg); }
+
+.neural-caption {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.neural-caption span {
+    padding: 5px 9px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.78);
+    color: #65758b;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+/* JavaFX calorie tracker project visual */
+.macrobyte-visual {
+    background: linear-gradient(135deg, #eef4f2 0%, #e3ece8 100%);
+}
+
+.app-window {
+    width: 100%;
+    max-width: 315px;
+    overflow: hidden;
+    border: 1px solid rgba(74, 104, 94, 0.18);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 16px 30px rgba(23, 32, 51, 0.08);
+}
+
+.app-window-bar {
+    height: 34px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 12px;
+    border-bottom: 1px solid #e1e8e5;
+    background: #f7faf9;
+}
+
+.app-window-bar span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #aab8b2;
+}
+
+.app-window-bar strong {
+    margin-left: auto;
+    color: #557068;
+    font-size: 10px;
+    letter-spacing: 0.3px;
+}
+
+.app-body {
+    min-height: 132px;
+    display: grid;
+    grid-template-columns: 54px 1fr;
+}
+
+.app-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px 13px;
+    border-right: 1px solid #e5ebe8;
+    background: #f5f8f7;
+}
+
+.app-sidebar span {
+    width: 26px;
+    height: 7px;
+    border-radius: 999px;
+    background: #99aaa3;
+}
+
+.app-dashboard {
+    display: grid;
+    grid-template-columns: 94px 1fr;
+    align-items: center;
+    gap: 16px;
+    padding: 18px;
+}
+
+.calorie-ring {
+    width: 82px;
+    height: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 9px solid #dfe9e5;
+    border-top-color: #5e8779;
+    border-right-color: #5e8779;
+    border-radius: 50%;
+    transform: rotate(10deg);
+}
+
+.calorie-ring strong,
+.calorie-ring small {
+    transform: rotate(-10deg);
+}
+
+.calorie-ring strong {
+    color: #355f52;
+    font-size: 17px;
+}
+
+.calorie-ring small {
+    color: #7a8d86;
+    font-size: 8px;
+    font-weight: 700;
+}
+
+.progress-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.progress-list span {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #e8eeeb;
+}
+
+.progress-list span::after {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: var(--progress);
+    border-radius: inherit;
+    background: #6f9387;
+}
+
+@media (max-width: 550px) {
+    .neural-network {
+        grid-template-columns: 44px 1fr 54px 1fr 44px;
+        padding: 14px;
+    }
+
+    .app-dashboard {
+        grid-template-columns: 80px 1fr;
+        gap: 10px;
+        padding: 14px;
+    }
+
+    .calorie-ring {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* Balance the five-card project layout on wide screens. */
+@media (min-width: 1051px) {
+    .projects-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .project-card {
+        grid-column: span 2;
+    }
+
+    .project-card:nth-child(4) {
+        grid-column: 2 / span 2;
+    }
+
+    .project-card:nth-child(5) {
+        grid-column: 4 / span 2;
+    }
+}
+
+@media (max-width: 1050px) {
+    .project-card {
+        grid-column: auto;
+    }
+
+    .project-card-featured {
+        grid-column: 1 / -1;
+    }
+}
+
+/* ===== Unique project visuals: Neural Network Linear Algebra ===== */
+.neural-visual {
+    background:
+        radial-gradient(circle at 18% 18%, rgba(94, 118, 173, 0.16), transparent 28%),
+        radial-gradient(circle at 82% 78%, rgba(111, 143, 204, 0.12), transparent 26%),
+        linear-gradient(135deg, #eef3fb 0%, #e3eaf6 100%);
+}
+
+.nn-board {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px;
+    border: 1px solid rgba(78, 102, 152, 0.16);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 16px 32px rgba(25, 35, 58, 0.10);
+}
+
+.nn-toolbar,
+.nn-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.nn-toolbar span,
+.nn-footer span {
+    padding: 5px 9px;
+    border-radius: 999px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #56657d;
+    background: #f1f5fb;
+    border: 1px solid rgba(95, 116, 155, 0.14);
+}
+
+.nn-main {
+    display: grid;
+    grid-template-columns: 1.2fr 0.9fr 0.9fr;
+    gap: 10px;
+    align-items: stretch;
+}
+
+.matrix-panel,
+.loss-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #f9fbfe 0%, #eff4fb 100%);
+    border: 1px solid rgba(107, 127, 160, 0.14);
+}
+
+.matrix-title,
+.loss-label {
+    color: #5d6d87;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.matrix-grid {
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #3a5374;
+}
+
+.matrix-grid span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 22px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.85);
+}
+
+.nn-flow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 8px 4px;
+}
+
+.flow-node {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #5f79a7;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 800;
+    box-shadow: 0 8px 18px rgba(95, 121, 167, 0.26);
+}
+
+.flow-node.mid { background: #7288b2; }
+.flow-node.out { background: #446ca1; }
+
+.flow-link {
+    width: 2px;
+    height: 14px;
+    background: linear-gradient(180deg, #9eb2d1 0%, #6e84ac 100%);
+    border-radius: 999px;
+}
+
+.nn-flow small {
+    margin-top: 2px;
+    color: #70819a;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.loss-panel {
+    gap: 8px;
+}
+
+.loss-spark {
+    position: relative;
+    height: 52px;
+}
+
+.loss-spark i {
+    position: absolute;
+    bottom: 6px;
+    width: 8px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #7c95c1 0%, #4d6e9f 100%);
+}
+
+.loss-spark i:nth-child(1) { left: 4px; height: 34px; }
+.loss-spark i:nth-child(2) { left: 18px; height: 26px; }
+.loss-spark i:nth-child(3) { left: 32px; height: 21px; }
+.loss-spark i:nth-child(4) { left: 46px; height: 14px; }
+.loss-spark i:nth-child(5) { left: 60px; height: 9px; }
+
+.equation-chip {
+    align-self: flex-start;
+    padding: 5px 9px;
+    border-radius: 999px;
+    background: #e8eef8;
+    color: #4c658e;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+/* ===== Unique project visuals: MacroByte Calorie Tracker ===== */
+.macrobyte-visual {
+    background:
+        radial-gradient(circle at 84% 20%, rgba(93, 131, 116, 0.15), transparent 24%),
+        radial-gradient(circle at 18% 85%, rgba(125, 160, 147, 0.14), transparent 24%),
+        linear-gradient(135deg, #eef6f3 0%, #e4eee9 100%);
+}
+
+.macrobyte-layout {
+    width: 100%;
+    max-width: 320px;
+    display: grid;
+    grid-template-columns: 146px 1fr;
+    gap: 12px;
+    align-items: center;
+}
+
+.macro-phone {
+    position: relative;
+    border-radius: 24px;
+    padding: 10px;
+    background: linear-gradient(180deg, #233534 0%, #172625 100%);
+    box-shadow: 0 18px 34px rgba(24, 42, 38, 0.18);
+}
+
+.phone-notch {
+    width: 44px;
+    height: 6px;
+    margin: 0 auto 8px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.2);
+}
+
+.phone-screen {
+    min-height: 170px;
+    padding: 14px;
+    border-radius: 18px;
+    background: linear-gradient(180deg, #fbfdfc 0%, #f1f6f3 100%);
+}
+
+.macro-screen-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+
+.macro-screen-header strong {
+    color: #2d5548;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.macro-screen-header small {
+    margin-top: 4px;
+    color: #7b9089;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.macro-rings {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.macro-ring {
+    min-height: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    background: #ffffff;
+    border: 6px solid #dfe7e3;
+    box-shadow: inset 0 0 0 3px #f7faf8;
+}
+
+.macro-ring b {
+    font-size: 11px;
+    color: #355f53;
+}
+
+.macro-ring span {
+    font-size: 9px;
+    font-weight: 700;
+    color: #70857e;
+}
+
+.macro-ring.protein { border-top-color: #5f8d7d; }
+.macro-ring.carbs { border-top-color: #7aa18e; }
+.macro-ring.fats { border-top-color: #4d7869; }
+
+.meal-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.meal-list span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 24px;
+    padding: 0 10px 0 28px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.88);
+    color: #5d736b;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.meal-list span::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #86a899;
+}
+
+.macro-sidecard {
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.88);
+    border: 1px solid rgba(99, 128, 118, 0.16);
+    box-shadow: 0 16px 30px rgba(24, 42, 38, 0.08);
+}
+
+.sidecard-header {
+    color: #4d6a61;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.weight-trend {
+    position: relative;
+    height: 46px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #f5faf7 0%, #edf4f0 100%);
+    overflow: hidden;
+}
+
+.weight-trend::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 50%;
+    height: 1px;
+    background: rgba(116, 144, 133, 0.18);
+}
+
+.weight-trend i {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #688d7f;
+    box-shadow: 0 0 0 4px rgba(104, 141, 127, 0.10);
+}
+
+.weight-trend i:nth-child(1) { left: 12px; top: 24px; }
+.weight-trend i:nth-child(2) { left: 34px; top: 18px; }
+.weight-trend i:nth-child(3) { left: 56px; top: 22px; }
+.weight-trend i:nth-child(4) { left: 78px; top: 14px; }
+.weight-trend i:nth-child(5) { left: 100px; top: 10px; }
+
+.goal-checks {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.goal-checks span {
+    position: relative;
+    padding-left: 22px;
+    color: #627870;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.goal-checks span::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e8f1ed;
+    color: #5b8978;
+    font-size: 10px;
+}
+
+@media (max-width: 550px) {
+    .nn-main {
+        grid-template-columns: 1fr;
+    }
+
+    .nn-flow {
+        flex-direction: row;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .flow-link {
+        width: 16px;
+        height: 2px;
+        margin: 0 2px;
+        align-self: center;
+        background: linear-gradient(90deg, #9eb2d1 0%, #6e84ac 100%);
+    }
+
+    .nn-flow small {
+        width: 100%;
+        text-align: center;
+    }
+
+    .macrobyte-layout {
+        grid-template-columns: 1fr;
+    }
+}
