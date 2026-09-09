@@ -188,40 +188,54 @@
 
                     <article class="project-card">
 
-                        <div class="project-image">
-                            <div class="project-placeholder">
-                                GRAMMY'S
+                        <div class="project-image project-visual grammy-visual" aria-hidden="true">
+                            <div class="visual-window">
+                                <div class="visual-window-bar">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="metric-row">
+                                    <div class="metric-card">
+                                        <small>Pages / Session</small>
+                                        <strong>+49%</strong>
+                                    </div>
+                                    <div class="metric-card">
+                                        <small>Bounce Rate</small>
+                                        <strong>33.7%</strong>
+                                    </div>
+                                </div>
+                                <div class="mini-bars">
+                                    <span style="--bar: 46%"></span>
+                                    <span style="--bar: 68%"></span>
+                                    <span style="--bar: 58%"></span>
+                                    <span style="--bar: 82%"></span>
+                                    <span style="--bar: 72%"></span>
+                                </div>
                             </div>
                         </div>
 
                         <div class="project-content">
 
-                            <span class="project-number">
-                                01
-                            </span>
+                            <span class="project-number">01</span>
 
-                            <h3>
-                                Grammy's Website Performance
-                            </h3>
+                            <h3>Grammy.com Performance Analysis</h3>
 
                             <p>
-                                An analysis of website performance and user
-                                behavior surrounding the Grammy Awards.
-                                The project focused on identifying trends,
-                                understanding performance patterns, and
-                                presenting findings through data-driven
-                                visualizations.
+                                Analyzed website traffic and engagement data in Excel to evaluate the impact of
+                                separating Grammy.com and RecordingAcademy.com, uncovering changes in bounce rate,
+                                pages per session, session duration, and mobile visitor behavior.
                             </p>
 
                             <div class="project-tags">
+                                <span>Excel</span>
                                 <span>Data Analysis</span>
-                                <span>Visualization</span>
-                                <span>Tableau</span>
+                                <span>PivotTables</span>
+                                <span>Business Insights</span>
                             </div>
 
                             <a
                                 href="https://1drv.ms/x/c/7c292b704f05200e/IQBtS-e2HvySTpnbSXhNe15jAV7fnZGqDgHYlkeS0c-0PRA?e=Dptwmh"
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 class="project-link"
                             >
                                 View Project →
@@ -236,42 +250,117 @@
 
                     <article class="project-card">
 
-                        <div class="project-image">
-                            <div class="project-placeholder">
-                                INTEL
+                        <div class="project-image project-visual intel-visual" aria-hidden="true">
+                            <div class="energy-card">
+                                <div class="energy-header">
+                                    <span>ENERGY MIX</span>
+                                    <strong>548K+</strong>
+                                </div>
+                                <div class="energy-chart">
+                                    <span style="--bar: 48%"></span>
+                                    <span style="--bar: 64%"></span>
+                                    <span style="--bar: 55%"></span>
+                                    <span style="--bar: 78%"></span>
+                                    <span style="--bar: 88%"></span>
+                                    <span style="--bar: 70%"></span>
+                                </div>
+                                <div class="energy-footer">
+                                    <span>Renewable Generation</span>
+                                    <strong>52%</strong>
+                                </div>
                             </div>
                         </div>
 
                         <div class="project-content">
 
-                            <span class="project-number">
-                                02
-                            </span>
+                            <span class="project-number">02</span>
 
-                            <h3>
-                                Intel's Sustainability
-                            </h3>
+                            <h3>Intel Sustainability Analysis</h3>
 
                             <p>
-                                A data visualization project examining Intel's
-                                sustainability efforts and environmental
-                                initiatives. The project involved analyzing
-                                data and communicating key findings through
-                                clear and interactive visualizations.
+                                Analyzed 548K+ U.S. energy records in Tableau to examine electricity demand,
+                                generation, regional supply-demand relationships, and renewable energy adoption
+                                through interactive dashboards and time-series visualizations.
                             </p>
 
                             <div class="project-tags">
-                                <span>Data Visualization</span>
                                 <span>Tableau</span>
-                                <span>Data Analysis</span>
+                                <span>Data Visualization</span>
+                                <span>Time Series</span>
+                                <span>Calculated Fields</span>
                             </div>
 
                             <a
                                 href="https://public.tableau.com/app/profile/patrick.tilotta/viz/IntelSustainabilityAnalysisGlobalCareerAccelerator/WriteAnswersHere"
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 class="project-link"
                             >
                                 View Project →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 3 -->
+
+                    <article class="project-card project-card-featured">
+
+                        <div class="project-image project-visual ispy-visual" aria-hidden="true">
+                            <div class="pipeline">
+                                <div class="pipeline-node python-node">
+                                    <span class="node-icon">Py</span>
+                                    <small>Python</small>
+                                </div>
+                                <span class="pipeline-arrow">→</span>
+                                <div class="pipeline-node api-node">
+                                    <span class="node-icon">API</span>
+                                    <small>IGDB</small>
+                                </div>
+                                <span class="pipeline-arrow">→</span>
+                                <div class="pipeline-node database-node">
+                                    <span class="database-top"></span>
+                                    <span class="database-body">SQL</span>
+                                    <small>MySQL</small>
+                                </div>
+                            </div>
+                            <div class="schema-lines">
+                                <span>Game</span>
+                                <span>Developer</span>
+                                <span>Platform</span>
+                                <span>Wishlist</span>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-number">03</span>
+
+                            <h3>ISpyGameDatabase</h3>
+
+                            <p>
+                                Built a Python data-ingestion workflow to retrieve game data from IGDB and load it
+                                into a normalized MySQL relational database. Developed analytical SQL using joins,
+                                subqueries, aggregates, recursive CTEs, triggers, stored procedures, and functions.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>SQL</span>
+                                <span>MySQL</span>
+                                <span>APIs</span>
+                                <span>Data Pipelines</span>
+                            </div>
+
+                            <a
+                                href="https://github.com/PattyPrograms/ISpyGameDatabase"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+                                View on GitHub →
                             </a>
 
                         </div>
@@ -323,9 +412,10 @@
                         <h3>Data & Analytics</h3>
 
                         <div class="skill-list">
-                            <span>SQL</span>
+                            <span>SQL / MySQL</span>
                             <span>Excel</span>
                             <span>Tableau</span>
+                            <span>APIs</span>
                         </div>
 
                     </div>

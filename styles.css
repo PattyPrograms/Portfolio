@@ -229,25 +229,34 @@ a {
     flex-shrink: 0;
 }
 
+/*
+   The source photo is left untouched. A portrait-shaped frame and a higher
+   focal point prevent the circular crop from cutting across the shirt and
+   shoulders in an awkward way.
+*/
 .profile-ring {
     width: 330px;
-    height: 330px;
+    height: 390px;
 
-    padding: 10px;
+    padding: 8px;
+    overflow: hidden;
 
     border: 1px solid #d9dee7;
+    border-radius: 28px;
 
-    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 18px 45px rgba(23, 32, 51, 0.10);
 }
 
 .profile-picture {
+    display: block;
     width: 100%;
     height: 100%;
 
     object-fit: cover;
+    object-position: center 24%;
 
-    border-radius: 50%;
-
+    border-radius: 21px;
     background: #e9edf3;
 }
 
@@ -309,7 +318,7 @@ a {
 .projects-grid {
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     gap: 28px;
 }
@@ -342,15 +351,234 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    overflow: hidden;
 }
 
-.project-placeholder {
-    font-size: 28px;
+.project-visual {
+    position: relative;
+    padding: 28px;
+}
+
+/* Grammy analytics visual */
+.grammy-visual {
+    background: linear-gradient(135deg, #f2f5fa 0%, #e7edf6 100%);
+}
+
+.visual-window {
+    width: 100%;
+    max-width: 310px;
+    padding: 14px;
+    border: 1px solid rgba(82, 100, 127, 0.18);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 16px 30px rgba(23, 32, 51, 0.08);
+}
+
+.visual-window-bar {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 12px;
+}
+
+.visual-window-bar span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #aeb8c8;
+}
+
+.metric-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.metric-card {
+    padding: 10px;
+    border-radius: 8px;
+    background: #f5f7fa;
+}
+
+.metric-card small,
+.energy-card small {
+    display: block;
+    color: #7a8799;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.metric-card strong {
+    display: block;
+    margin-top: 2px;
+    color: #23324b;
+    font-size: 18px;
+}
+
+.mini-bars {
+    height: 62px;
+    margin-top: 13px;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.mini-bars span,
+.energy-chart span {
+    flex: 1;
+    height: var(--bar);
+    min-height: 8px;
+    border-radius: 4px 4px 2px 2px;
+    background: #526f97;
+}
+
+/* Intel energy visual */
+.intel-visual {
+    background: linear-gradient(135deg, #eef3f6 0%, #e3ebef 100%);
+}
+
+.energy-card {
+    width: 100%;
+    max-width: 310px;
+    padding: 18px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 16px 30px rgba(23, 32, 51, 0.08);
+}
+
+.energy-header,
+.energy-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.energy-header span,
+.energy-footer span {
+    color: #667085;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+.energy-header strong {
+    font-size: 16px;
+    color: #24374a;
+}
+
+.energy-chart {
+    height: 86px;
+    display: flex;
+    align-items: flex-end;
+    gap: 7px;
+    margin: 16px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #dfe5eb;
+}
+
+.energy-chart span {
+    background: #557b72;
+}
+
+.energy-footer strong {
+    color: #3b675c;
+    font-size: 20px;
+}
+
+/* Python -> API -> SQL project visual */
+.ispy-visual {
+    flex-direction: column;
+    gap: 22px;
+    background: linear-gradient(135deg, #edf2f8 0%, #e4eaf3 100%);
+}
+
+.pipeline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.pipeline-node {
+    min-width: 72px;
+    min-height: 76px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    border: 1px solid rgba(82, 100, 127, 0.18);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 10px 20px rgba(23, 32, 51, 0.06);
+}
+
+.node-icon {
+    font-size: 15px;
     font-weight: 800;
+    color: #243d62;
+}
 
-    letter-spacing: 4px;
+.pipeline-node small {
+    color: #6a778a;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
-    color: #52647f;
+.pipeline-arrow {
+    color: #7890ad;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.database-node {
+    position: relative;
+    border-radius: 14px;
+}
+
+.database-top {
+    width: 35px;
+    height: 9px;
+    margin-bottom: -6px;
+    border: 2px solid #526f97;
+    border-radius: 50%;
+}
+
+.database-body {
+    width: 35px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #526f97;
+    border-bottom: 2px solid #526f97;
+    border-left: 2px solid #526f97;
+    border-radius: 0 0 10px 10px;
+    color: #243d62;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.schema-lines {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7px;
+}
+
+.schema-lines span {
+    padding: 5px 8px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.75);
+    color: #65758b;
+    font-size: 9px;
+    font-weight: 700;
 }
 
 .project-content {
@@ -632,6 +860,17 @@ footer {
    RESPONSIVE DESIGN
 ========================================= */
 
+
+@media (max-width: 1050px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-card-featured {
+        grid-column: 1 / -1;
+    }
+}
+
 @media (max-width: 850px) {
 
     .navbar nav {
@@ -655,8 +894,12 @@ footer {
     }
 
     .profile-ring {
-        width: 250px;
-        height: 250px;
+        width: 270px;
+        height: 320px;
+    }
+
+    .project-card-featured {
+        grid-column: auto;
     }
 
     .projects-grid,
