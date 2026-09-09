@@ -1624,3 +1624,217 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Refined project visuals — intentionally match the simple dashboard language used above */
+.neural-visual {
+    background: linear-gradient(135deg, #f1f4fa 0%, #e7edf6 100%);
+}
+
+.notebook-card {
+    width: 100%;
+    max-width: 310px;
+    padding: 16px;
+    border: 1px solid rgba(82, 100, 127, 0.18);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 16px 30px rgba(23, 32, 51, 0.08);
+}
+
+.notebook-top,
+.notebook-row,
+.notebook-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.notebook-top {
+    padding-bottom: 11px;
+    border-bottom: 1px solid #e6eaf0;
+}
+
+.notebook-top span {
+    color: #6d7c92;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.9px;
+}
+
+.notebook-top strong {
+    color: #293b58;
+    font-size: 14px;
+}
+
+.notebook-row {
+    margin-top: 9px;
+    padding: 9px 10px;
+    border-radius: 8px;
+    background: #f5f7fa;
+}
+
+.notebook-row code {
+    color: #3b5579;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.notebook-row span {
+    padding: 3px 7px;
+    border-radius: 999px;
+    background: #e8edf5;
+    color: #63758f;
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.notebook-bottom {
+    margin-top: 12px;
+}
+
+.gradient-line {
+    width: 102px;
+    height: 36px;
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.gradient-line i {
+    flex: 1;
+    height: var(--h);
+    min-height: 5px;
+    border-radius: 3px 3px 2px 2px;
+    background: #5b759d;
+}
+
+.notebook-bottom small {
+    max-width: 130px;
+    color: #78869a;
+    font-size: 9px;
+    line-height: 1.35;
+    font-weight: 700;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 0.35px;
+}
+
+.macrobyte-visual {
+    background: linear-gradient(135deg, #eef4f2 0%, #e4ece8 100%);
+}
+
+.java-app-card {
+    width: 100%;
+    max-width: 310px;
+    overflow: hidden;
+    border: 1px solid rgba(74, 104, 94, 0.18);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 16px 30px rgba(23, 32, 51, 0.08);
+}
+
+.java-app-top {
+    height: 34px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 12px;
+    border-bottom: 1px solid #e1e8e5;
+    background: #f7faf9;
+}
+
+.java-app-top span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #aab8b2;
+}
+
+.java-app-top strong {
+    margin-left: auto;
+    color: #557068;
+    font-size: 10px;
+    letter-spacing: 0.3px;
+}
+
+.java-app-content {
+    padding: 14px;
+}
+
+.java-summary {
+    display: grid;
+    grid-template-columns: 86px 1fr;
+    align-items: end;
+    gap: 14px;
+    margin-bottom: 12px;
+}
+
+.java-summary small {
+    display: block;
+    color: #7a8d86;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.java-summary strong {
+    display: block;
+    margin-top: 2px;
+    color: #355f52;
+    font-size: 18px;
+}
+
+.java-progress {
+    height: 8px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #e7eeeb;
+}
+
+.java-progress span {
+    display: block;
+    width: 72%;
+    height: 100%;
+    border-radius: inherit;
+    background: #678e80;
+}
+
+.java-rows {
+    display: grid;
+    gap: 7px;
+}
+
+.java-rows div {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background: #f5f8f7;
+}
+
+.java-rows b,
+.java-rows span {
+    font-size: 9px;
+}
+
+.java-rows b {
+    color: #526b62;
+}
+
+.java-rows span {
+    color: #7c8d87;
+    font-weight: 700;
+}
+
+.java-footer {
+    padding: 8px 14px;
+    border-top: 1px solid #e6ece9;
+    color: #768a82;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-align: center;
+    background: #fbfcfc;
+}
